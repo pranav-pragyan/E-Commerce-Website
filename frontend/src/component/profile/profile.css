@@ -1,0 +1,100 @@
+.profileContainer{
+
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  max-width: 100%;
+  position: fixed;
+  left: 0%;
+  font-family: sans-serif
+
+}
+
+.profileContainer > div{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  background-color: rgb(155, 244, 201);
+}
+
+.Profileheader{
+  color: rgb(57, 56, 56);
+  /* transform: translateX(-10vmax) translateY(-2vmax); */
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 2vmax;
+  padding: 20px;
+} 
+.profileContainer > div > img{
+  width: 20vmax;
+  height: 20vmax;
+}
+
+.ProfileheaderContainer > a{
+    border: none;
+    font-weight: 400;
+    font-size: 1.2vmax;
+    font-family: sans-serif;
+    background-color: rgb(43, 181, 43);
+    color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+    width: 10vmax;
+    height: 2vmax;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2vmax;
+    border-radius: 2%;
+}
+
+.ProfileheaderContainer>a:hover{
+  background-color: darkgreen;
+}
+
+.profileContainer > div:last-child{
+  justify-content: space-evenly;
+  padding: 10vmax;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.linkDiv{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.linkDiv > a{
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color:  rgb(43, 181, 43);
+  transition: all 0.5s;
+  text-decoration: none;
+  width: 15vmax;
+  height: 2vmax;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2vmax;
+  border-radius: 2%;
+  font-weight: 400;
+  font-size: 1.2vmax;
+  font-family: sans-serif;
+  margin: 1vmax 0;
+}
+
+.linkDiv >a:hover{
+  background-color: darkgreen;
+}
+  
+@media screen and (max-width:600px){
+  .profileContainer{
+    flex-direction: column;
+  }
+  
+}

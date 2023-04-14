@@ -1,0 +1,66 @@
+.paymentContainer{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  margin: 2vmax;
+  height: 70vh;
+}
+
+.paymentForm{
+  width: 25%;
+  height: 100%;
+}
+
+.paymentForm>p{
+  font: 400 2vmax "san-Serif";
+  color: black;
+  border-bottom: 1px solid rgb(33, 119, 41);
+  margin: auto;
+  text-align: center;
+  padding: 1vmax 0;
+}
+
+.paymentForm >div{
+  display: flex;
+  align-items: center;
+  margin: 2vmax 0;
+  color: black;
+}
+
+.paymentInput{
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  outline: none;
+  width: 100%;
+}
+
+.paymentForm>div>svg{
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.5vmax;
+  color: rgb(41, 36, 36);
+}
+
+.paymentFormBtn{
+  border: none;
+  background-color: rgb(40, 122, 40);
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  height: 2.5vmax;
+  color: white;
+}
+
+.paymentFormBtn:hover{
+  background-color: darkgreen;
+}

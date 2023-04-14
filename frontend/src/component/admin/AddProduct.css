@@ -1,0 +1,136 @@
+.addProductContainer{
+  width: 80vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .shippingBox{
+  background-color: white;
+  width: 25vw;
+  height: 90vh;
+  overflow: hidden;
+  box-sizing: border-box;
+} */
+
+/* .shippingHeading{
+  text-align: center;
+  color: black;
+  font : 400 1.3vmax "Sans-serif";
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid rgb(70, 174, 68);
+  padding: 1.2vmax;
+} */
+
+#addProductHeading{
+  font : 400 2rem "cursive";
+  padding: 1vmax;
+  box-sizing: border-box;
+  color: green;
+  text-align: center;
+  border-bottom: 1px solid green;
+  /* margin: 1rem; */
+}
+
+.addProductForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* vertical  */ 
+  align-items: center; /* Horizontal  */
+  margin: auto;
+  padding: 2vmax;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.addProductForm > div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 2px;
+}
+
+.addProductForm > div > input, .addProductForm > div > select, .addProductForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.addProductForm > div > select{
+  /* margin-right: 20px; */
+  width: 17.7vmax;
+}
+
+.addProductForm > div > textarea{
+  width: 17.7vmax;
+}
+.addProductForm > div > svg{
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.5vmax;
+  color: rgb(41, 36, 36);
+}
+
+#addProductBtn{
+  border: none;
+  background-color: rgb(70, 174, 68);
+  margin-top: 2vmax;
+  /* margin-left: 1px; */
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  padding: 1vmax;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  font-weight: 300;
+  /* border-radius: 5%; */
+}
+
+#addProductBtn:hover{
+  background-color: darkgreen;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .shippingBox{
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .shippingHeading{
+    font : 400 6vw "sans-serif";
+    padding: 5vw;
+  }
+
+  .shippingForm{
+    padding: 11vw;
+  }
+
+  .shippingForm > div > input, .shippingForm > div > select{
+    padding: 5vw 10vw;
+    font : 300 4vw "sans-serif";
+  }
+
+  .shippingForm > div > svg{
+    font-size: 6vw;
+  }
+
+  .shippingBtn{
+    font : 300 4vw "sans-serif";
+    padding: 4vw;
+  }
+}

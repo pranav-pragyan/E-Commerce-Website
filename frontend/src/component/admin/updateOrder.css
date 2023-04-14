@@ -1,0 +1,52 @@
+.orderUpdateForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* vertical  */ 
+  align-items: center; /* Horizontal  */
+  margin: auto;
+  padding: 2vmax;
+  margin-left: 5vmax;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.orderUpdateForm > div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.orderUpdateForm>div>select{
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  width: 100%;
+  outline: none;
+}
+
+#updateOrderBtn{
+  border: none;
+  background-color: rgb(70, 174, 68);
+  margin: 2vmax;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  padding: 1vmax;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  font-weight: 300;
+  /* border-radius: 5%; */
+}
+
+#updateOrderBtn:hover{
+  background-color: darkgreen;
+}

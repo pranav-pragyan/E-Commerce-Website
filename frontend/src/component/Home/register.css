@@ -1,0 +1,81 @@
+/* .Container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color:rgb(174, 239, 239);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.signUpBox{
+  width: 30vw;
+  height: 80vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: 500;
+  
+}
+
+.signUpForm{
+
+    background-color: green;
+    margin-top: 4vmax;
+    margin-right: 20.2%;
+    margin-left: 20vmax;
+    width: 30vw;
+    height: 50vh;
+    position: absolute;
+}
+ */
+
+ .signUpContainer{
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color:rgb(174, 239, 239);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+
+.signUpBox{
+  width: 30vw;
+  height: 70vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.signUpForm{
+
+    /* background-color: pink; */
+    margin-top: 20vmax;
+    margin-right: 20%;
+    margin-left: 20vmax;
+    width: 30vw;
+    height: 30vh;
+    padding-top: 30px;
+    position: absolute;
+    background-color: white;
+
+
+}
+

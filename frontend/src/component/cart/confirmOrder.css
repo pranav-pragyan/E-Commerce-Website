@@ -1,0 +1,212 @@
+.confirmOrderPage{
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+}
+
+.confirmOrderPage > div >:last-child{
+  border-left: 1px solid black;
+}
+
+.confirmShippingAdd{
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.confirmShippingAdd>p{
+  font: 400 1.8vmax "sans-Serif";
+}
+
+.confirmShippingAddBox,.confirmCartItemsContainer{
+  margin: 2vmax;
+}
+
+.confirmShippingAddBox>div{
+  display: flex;
+  margin: 1vmax 0;
+}
+
+.confirmShippingAddBox>div>p{
+  font : 400 1vmax "sans-Serif";
+  color: black;
+}
+
+.confirmShippingAddBox>div>span{
+  font : 100 1vmax "sans-Serif";
+  color: rgb(44, 40, 40);
+  margin: 0 1vmax;
+}
+
+.confirmCartItem{
+  font : 400 1vmax "sans-Serif";
+}
+
+.confirmCartItem>p{
+  padding-left: 5vmax;
+  padding-top: 2vmax;
+  font : 400 1.8vmax "sans-Serif";
+}
+
+.confirmCartItemsContainer{
+  max-width: 40vmax;
+  overflow-y: auto;
+}
+
+.confirmCartItemsContainer>div{
+  font : 400 1vmax "sans-Serif";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vmax ;
+}
+
+.confirmCartItemsContainer>div>img{
+  width: 4vmax;
+}
+
+.confirmCartItemsContainer>div>a{
+  text-decoration: none;
+  width: 60%;
+  color: darkgreen;
+  transition: all 0.5s;
+}
+
+.confirmCartItemsContainer>div>a:hover{
+  font-size: 1.1vmax;
+}
+
+.confirmCartItemsContainer>div>span{
+  font : 400 1vmax "sans-Serif";
+  color: rgb(97, 174, 97);
+}
+
+.orderSummery{
+ padding-left: 7vmax;
+ padding-right: 7vmax;
+ padding-bottom: 7vmax;
+ padding: 4vmax;
+}
+
+.orderSummery>p{
+  text-align: center;
+  box-sizing: border-box;
+  font : 400 1.8vmax "sans-Serif";
+  border-bottom: 1px solid black;
+  margin: auto;
+  /* margin-bottom: 5px; */
+  padding: 1vmax;
+  width: 100%;
+}
+
+.orderSummery>div>div{
+  display: flex;
+  justify-content: space-between;
+  margin: 2vmax 0;
+  font : 300 1vmax "sans-Serif";
+}
+
+.orderSummery>div>div>span{
+  color: black;
+}
+
+.orderSummaryTotal{
+  display: flex;
+  border-top: 1px solid black;
+  padding: 2vmax 0;
+  justify-content: space-between;
+}
+
+.orderSummery>button{
+  background-color: rgb(68, 161, 68);
+  font: 400 1vmax "sans-Serif";
+  width: 100%;
+  height: 2.5vmax;
+  color: white;
+  transition: all 0.5s;
+  border: none;
+  
+}
+
+.orderSummery>button:hover{
+  background-color: darkgreen;
+}
+
+@media screen and (max-width:600px) {
+
+  .confirmOrderPage{
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+  .confirmOrderPage:div:last-child{
+      border-left: 0;
+      border-top: 1px solid black;
+  }
+
+  .confirmShippingAdd>p{
+    font: 400 6vmax "sans-Serif";
+  }
+
+  .confirmShippingAddBox>div{
+    display: flex;
+    margin: 6vw 0;
+  }
+
+  .confirmShippingAddBox>div>p{
+    font: 400 4vmax "sans-Serif"; 
+  }
+
+  .confirmShippingAddBox>div>span{
+    font: 100 4vmax "sans-Serif"; 
+  }
+
+  .confirmCartItem>p{
+    font: 400 6vmax "sans-Serif"; 
+  }
+
+  .confirmCartItemsContainer{
+    max-width: 50vw;
+  }
+
+  .confirmCartItemsContainer>div{
+    font: 400 4vmax "sans-Serif";
+    margin : 4vw 0;
+  }
+  
+  .confirmCartItemsContainer>div>img{
+    width: 10vw;
+  }
+
+  .confirmCartItemsContainer>div>a{
+    margin: 0;
+    width: 30%;
+  }
+  
+  .confirmCartItemsContainer>div>span{
+    font: 100 4vmax "sans-Serif"; 
+  }
+
+  .orderSummery{
+    padding: 12vw;
+  }
+
+  .orderSummery>p{
+    font: 400 6vmax "sans-Serif";  
+    padding: 4vw;
+  }
+
+  .orderSummery>div>div{
+    font: 300 4vmax "sans-Serif"; 
+  }
+
+  .orderSummaryTotal{
+    font: 300 4vmax "sans-Serif"; 
+    padding: 5vw 0;
+  }
+
+  .orderSummaryTotal>button{
+    padding: 4vw;
+    margin: 4vw auto;
+    font: 400 4vmax "sans-Serif"; 
+  }
+}

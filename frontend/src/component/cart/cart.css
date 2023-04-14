@@ -1,0 +1,193 @@
+.emptyCart{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  padding: 10vmax;
+  padding-top: 20vmax;
+}
+
+.emptyCart>svg{
+  font-size: 5vmax;
+  color: rgb(87, 170, 87);
+}
+
+.emptyCart>p{
+ font-size: 2vmax; 
+}
+
+.emptyCart>a{
+  background-color: rgb(87, 170, 87) ;
+  color: white;
+  border: none;
+  padding: 1vmax 2vmax;
+  cursor: pointer;
+  font : 400 1vmax "sans-serif";
+  text-decoration: none;
+  margin: 2px;
+}
+
+
+
+.cartContainer{
+  padding: 5vmax;
+}
+
+.cartHeader{
+  background-color: rgb(59, 157, 59);
+  width: 90%;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  margin: auto;
+  color : white;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+}
+.cartHeader>p{
+  margin: 10px;
+}
+
+.cartHeader>p:last-child{
+  text-align: end;
+}
+
+.cartData{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns:4fr 1fr 1fr ;
+}
+
+.cardInput{
+  display: flex;
+  height: 8vmax;
+  align-items: center;
+}
+
+.cardInput > button{
+  border: none;
+  background-color: rgb(59, 157, 59);
+  padding: 0.5vmax;
+  color: white;
+  transition: all 0.5s;
+}
+
+.cardInput > button:hover{
+  background-color: darkgreen;
+}
+
+.cardInput > input{
+  border: none;
+  padding: 0.5vmax;
+  width: 2vmax;
+  font-size: 0.8vmax;
+  font-weight: 400;
+  font-family: sans-serif;
+  color:black;
+  text-align: center;
+}
+
+.CartSubtotal{
+  justify-content: flex-end;
+  padding: 0.5vmax;
+  padding-top: 30px;
+  display: flex;
+  color: black;
+  box-sizing: border-box;
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: center;
+  height: 8vmax;
+}
+
+.totalPrice{
+  display: grid;
+  grid-template-columns: 2fr 1.1fr
+}
+.totalPriceBox{
+  border-top: 2px solid rgb(76, 210, 76);
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 1vmax 4vmax;
+  display: flex;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  padding: 2vmax 0;
+  margin-left: 8px;
+}
+
+.checkOutBtn{
+  display:flex ;
+  justify-content: flex-end;
+}
+
+.checkOutBtn > button{
+  background-color: rgb(59, 157, 59);
+  border-radius: 30px;
+  color: white;
+  padding: 0.8vmax 4vmax;
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: sans-serif;
+  margin: 1vmax 4vmax;
+  border: none;
+  transition: 0.5s all;
+  width: 50%;
+}
+
+.checkOutBtn >button:hover{
+  background-color: darkgreen;
+}
+
+
+@media screen and (max-width : 600px) {
+  .cartContainer{
+    padding: 0%;
+    min-height: 60vh;
+  }
+
+  .cartHeader{
+    width: 100%;
+    font: 300 1.7vmax "sans-serif";
+    grid-template-columns: 3rf 1rf 1rf;
+  }
+  .cartData{
+    width: 100%;
+    grid-template-columns: 3rf 1rf 1rf;
+  }
+
+  .cardInput{
+    height: 20vmax;
+  }
+
+  .cardInput > button{
+    padding: 1.5vmax;
+  }
+
+  .cardInput > input{
+    padding: 1.5vmax;
+    font : 400 1.8vmax "sans-serif";
+  }
+
+  .CartSubtotal{
+    padding: 1.5vmax;
+    height: 20vmax;
+    font : 300 2vmax "sans-serif";
+  }
+
+  .totalPrice{
+    display: grid;
+    grid-template-columns: 0rf 2rf;
+  }
+  
+  .totalPriceBox{
+    padding: 2vmax;
+    font : 300 2vmax "sans-serif";
+  }
+}

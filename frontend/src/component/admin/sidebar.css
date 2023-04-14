@@ -1,0 +1,35 @@
+.sidebar {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  background-color: rgba(209, 209, 195, 0.966);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 11%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 4px solid #24ad1f;
+  /* background-color: white;
+ 
+  padding: 4rem 0; */
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+  padding: 1rem;
+  font-size: 20px;
+  font-family: Roboto;
+  align-items: center;
+}
+
+.sidebar a:hover {
+  color: #24ad1f;
+  transform: scale(1.1);
+}

@@ -1,0 +1,39 @@
+.loadingStyle{
+
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(42, 176, 35);
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.loadingStyle > div{
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: rotation 800ms linear infinite;
+  position: absolute;
+  opacity: 0.8;
+}
+
+@keyframes rotation{
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+.loadingStyle > img{
+  z-index: 0;
+  height: 60vh;
+  width: 60vw;
+  position: relative;
+}
+
+.loadingStyle > p{
+  font-size: 25px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: black;
+}

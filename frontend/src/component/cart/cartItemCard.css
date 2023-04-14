@@ -1,0 +1,70 @@
+.cartItemCard{
+  /* display flex brings all the items in one line */
+  display: flex;
+  padding: 1vmax;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.cartItemCard>img{
+  width: 5vmax;
+}
+
+.cartItemCard>div{
+  display: flex;
+  flex-direction: column;
+  margin: 0.3vmax 1vmax;
+}
+
+.cartItemCard>div>a{
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: cursive;
+  text-decoration: none;
+  color: rgb(10, 10, 3);
+  transition: 0.5s all;
+}
+
+.cartItemCard>div>a:hover{
+  color: darkgreen;
+  font-size: 1.1vmax;
+}
+
+.cartItemCard>div>span{
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: rgb(10, 10, 3);
+}
+
+.cartItemCard>div>p{
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: rgb(185, 33, 13);
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+  .cartItemCard{
+    padding: 3vmax;
+    height: 25vmax;
+  }
+
+  .cartItemCard > div{
+    margin: 1vmax 2vmax;
+  }
+
+  .cartItemCard > div > a{
+    font-size: 2vmax;
+  }
+
+  .cartItemCard>div>span{
+    font-size: 2vmax;
+  }
+
+  .cartItemCard > div > p{
+    font-size: 1.8vmax;
+  }
+}

@@ -1,0 +1,173 @@
+.productImageShow{
+  float:left; 
+  background:rgb(205, 255, 232);
+  width:35%;
+  height:50vmax;
+  /* background-color: rgb(194, 163, 124); */
+  
+}
+
+.CarouselImg{
+  width: 35vmax;
+  height: 25vmax;
+  padding-left: 10px;
+  justify-content:center;
+  text-align: center;
+  margin-top: 6vmax;
+  background:rgb(205, 255, 232);
+}
+
+.productDetail{
+  float:right; 
+  background:rgb(205, 255, 232);
+  width:65%;
+  height:50vmax;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  padding-top: 30px;
+  padding-left: 30px;
+  align-items: flex-start;
+}
+
+
+
+.detail1 > h2{
+    font-family: monospace;
+}
+
+.detail1 > p{
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(45, 42, 42, 0.941);
+  font-family: monospace;
+}
+
+.detail2{
+  /* background-color: rgb(11, 47, 80); */
+  /* padding-right:2px ; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.205);
+  border-bottom: 1px solid rgba(0,0,0,0.205);
+  width: 60%;
+  padding: 1vmax 0;
+}
+
+.detail2 > span
+{
+  color: black;
+  font : 200 1vmax cursive;
+}
+
+.detail3{
+  width: 70%;
+}
+
+.detail3 > h1{
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.detail31{
+  display: flex;
+  align-items: center;
+  
+}
+
+.detail311 > button{
+  border: none;
+  background-color: rgb(36, 32, 32);
+  padding: 0.5vmax ;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+
+.detail311 > button:hover{
+  background-color: green;
+}
+
+.detail311 > input{
+  border: none;
+  padding: 0.5vmax;
+  width: 2vmax;
+  text-align: center;
+  font-weight : 400;
+  font-size: 0.8vmax ;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.74);
+}
+
+.detail31>button:last-child{
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: green;
+  font-weight: 500;
+  font-size: 0.6vmax;
+  font-family:sans-serif;
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  width: 8vmax;
+  height: 3vmax;
+  margin: 1vmax;
+}
+
+.detail31>button:last-child:hover{
+  background-color: darkgreen;
+}
+
+
+.detail3>p{
+  border-top: 1px solid rgba(0,0,0,0.205);
+  border-bottom: 1px solid rgba(0,0,0,0.205);
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.SubmitReview{
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: green;
+  font-weight: 600;
+  font-size: 0.7vmax;
+  font-family:sans-serif;
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  width: 9vmax;
+  height: 3vmax;
+  margin-top: 1vmax;
+}
+
+.SubmitReview:hover{
+  background-color: darkgreen;
+}
+
+/* add media query */
+
+@media screen and (max-width:600px){
+
+  .main{
+    flex-direction: column;
+    height: unset;
+  }
+  
+}
+
+/* .review{
+  width: 100%;
+  height: auto; 
+  margin-top: 2px;
+  background-color: black;
+  display: flex;
+
+} */

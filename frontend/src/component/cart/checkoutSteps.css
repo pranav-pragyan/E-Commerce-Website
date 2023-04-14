@@ -1,0 +1,12 @@
+.MultiStepConnercter-line{
+  display: none !important;
+}
+
+.MultiStepConnercte-root{
+  height: 1px;
+  background-color: black;
+}
+
+.MultiStepConnercte-active,.MultiStepConnercte-completed{
+  background-color: darkgreen;
+}
